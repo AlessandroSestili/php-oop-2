@@ -8,31 +8,31 @@ class Product {
 
 
     // SET & GET NAME
-    public function setName($value) {
+    protected function setName($value) {
         $this->name = $value;
     }
 
-    public function getName() {
+    protected function getName() {
         return $this->name;
     }
 
 
     // SET & GET BRAND
-    public function setBrand($value) {
+    protected function setBrand($value) {
         $this->brand = $value;
     }
 
-    public function getBrand() {
+    protected function getBrand() {
         return $this->brand;
     }
 
 
     // SET & GET BRAND
-    public function setPrice($value) {
+    protected function setPrice($value) {
         $this->price = $value;
     }
 
-    public function getPrice() {
+    protected function getPrice() {
         return $this->price;
     }
 }
