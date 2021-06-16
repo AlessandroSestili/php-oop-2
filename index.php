@@ -6,7 +6,7 @@ require_once ("./classes/user_premium.php");
 require_once ("./classes/credit_cards.php");
 
 // Premium User
-$user1= new UserPremium(23,"Sofia", "Cima","sofia.cima@gmsil.com", 20);
+$user1= new User(NULL,"Sofia", "Cima","sofia.cima@gmsil.com");
 
 // Product
 $firstProduct = new Product("iPhone" , "Apple" , 700);
@@ -15,5 +15,6 @@ $firstProduct = new Product("iPhone" , "Apple" , 700);
 $newcredit = new CreditCards(2345569845671200 , 18900);
 
 var_dump($user1 , $firstProduct , $newcredit);
+
 
 

@@ -9,9 +9,9 @@ class User {
     //protected $credit_cards;
 
     // Creo construct pubblico
-    public function __construct($id ,$name , $surname, $email)
+    public function __construct($id=0 ,$name , $surname, $email)
     {
-        $this->setID($id);
+        $this->setID();
         $this->setName($name);
         $this->setSurname($surname);
         $this->setEmail($email);
@@ -20,11 +20,10 @@ class User {
 
 
     //SET & GET ID
-    protected function setID($value){
-      
-        $this->id = $value;
+    protected function setID(){
+        // Setto id tra 1 a 99 casuale
+        $this->id = rand(1,99);
     }
-  
     protected function getUserId() {
 
         return $this->id;
@@ -36,7 +35,6 @@ class User {
 
         $this->name = $value;
     }
-
     protected function getName() {
 
         return $this->name;
@@ -48,7 +46,6 @@ class User {
 
         $this->surname = $value;
     }
-
     protected function getSurname() {
 
         return $this->surname;
@@ -60,7 +57,6 @@ class User {
 
         $this->email = $value;
     }
-
     protected function getEmail() {
 
         return $this->email;
