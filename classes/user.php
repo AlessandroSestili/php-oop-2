@@ -11,10 +11,10 @@ class User {
     // Creo construct pubblico
     public function __construct($id ,$name , $surname, $email)
     {
-        $this->id= $id;
-        $this->name= $name;
-        $this->surname= $surname;
-        $this->email= $email;
+        $this->id = $id;
+        $this->name = $name;
+        $this->surname = $surname;
+        $this->email = $email;
         //$this->credit_cards= [];
     }
 
@@ -65,7 +65,6 @@ class User {
 
         return $this->email;
     }
-
 }
 
 

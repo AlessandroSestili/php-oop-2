@@ -6,6 +6,13 @@ class Product {
     protected $brand;
     protected $price;
 
+    function __construct($name , $brand , $price)
+    {
+        $this->name=$name;
+        $this->brand=$brand;
+        $this->price=$price;
+    }
+
 
     // SET & GET NAME
     protected function setName($value) {
