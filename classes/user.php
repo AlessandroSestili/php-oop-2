@@ -55,6 +55,10 @@ class User {
     //SET & GET  EMAIL
     protected function setEmail($value) {
 
+        // controllo che la mail sia valida ( con la @ inside)
+        if (!strstr($value, "@")) {
+            throw new Exception("EMAIL NON VALIDA!");
+        }
         $this->email = $value;
     }
     protected function getEmail() {
