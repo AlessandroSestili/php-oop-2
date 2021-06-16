@@ -9,7 +9,7 @@ class User {
     //protected $credit_cards;
 
     // Creo construct pubblico
-    public function __construct($id=0 ,$name , $surname, $email)
+    public function __construct($id= NULL ,$name , $surname, $email)
     {
         $this->setID();
         $this->setName($name);
@@ -64,6 +64,16 @@ class User {
     protected function getEmail() {
 
         return $this->email;
+    }
+
+
+    // Creo funzione che stampa HTML 
+    public function renderUser()
+    {
+        $render = "<h1>" . $this->name . $this->email . "</h1>";
+        $render .= "<h2> l'ID dell utente é:" . $this->id . "</h2>";
+
+        return $render;
     }
 }
 

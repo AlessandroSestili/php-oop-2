@@ -25,7 +25,6 @@ class UserPremium extends User {
       
         $this->extraDiscount = $value;
     }
-  
     protected function getExtraDiscount() {
 
         return $this->extraDiscount;
