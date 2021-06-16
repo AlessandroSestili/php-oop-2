@@ -34,6 +34,11 @@ class Product {
 
     // SET & GET BRAND
     protected function setPrice($value) {
+        // controllo che value sia un numero
+        if(!is_int($value)) {
+            throw new Exception("PREZZO NON VALIDO!");
+        }
+
         $this->price = $value;
     }
     protected function getPrice() {
