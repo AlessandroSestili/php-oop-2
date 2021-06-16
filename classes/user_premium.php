@@ -12,11 +12,11 @@ class UserPremium extends User {
     {
         parent::__construct($id ,$name , $surname, $email);
         
-        $this->id = $id;
-        $this->name = $name;
-        $this->surname = $surname;
-        $this->email = $email;
-        $this->extraDiscount=$extraDiscount;
+        $this->setID();
+        $this->setName($name);
+        $this->setSurname($surname);
+        $this->setEmail($email);
+        $this->setExtraDiscount($extraDiscount);
     }
 
 
