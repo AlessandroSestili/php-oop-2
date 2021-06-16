@@ -14,6 +14,6 @@ $firstProduct = new Product("iPhone" , "Apple" , 700);
 // CredirCard
 $newcredit = new CreditCards(2345569845671200 , 18900);
 
-var_dump()
+var_dump($user1 , $firstProduct , $newcredit);
 
 
