@@ -6,7 +6,7 @@ require_once ("./classes/user_premium.php");
 require_once ("./classes/credit_cards.php");
 
 // Premium User
-$user1= new User(NULL,"Sofia", "Cima","sofia.cimamsil.com");
+$user1= new UserPremium(NULL,"Sofia", "Cima","sofia.ciç@mamsil.com",40);
 
 // Product
 $firstProduct = new Product("iPhone" , "Apple" , 700);

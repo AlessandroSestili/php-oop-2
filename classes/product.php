@@ -8,9 +8,9 @@ class Product {
 
     function __construct($name , $brand , $price)
     {
-        $this->name=$name;
-        $this->brand=$brand;
-        $this->price=$price;
+        $this->setName($name);
+        $this->setBrand($brand);
+        $this->setPrice($price);
     }
 
 
@@ -18,7 +18,6 @@ class Product {
     protected function setName($value) {
         $this->name = $value;
     }
-
     protected function getName() {
         return $this->name;
     }
@@ -28,7 +27,6 @@ class Product {
     protected function setBrand($value) {
         $this->brand = $value;
     }
-
     protected function getBrand() {
         return $this->brand;
     }
@@ -38,7 +36,6 @@ class Product {
     protected function setPrice($value) {
         $this->price = $value;
     }
-
     protected function getPrice() {
         return $this->price;
     }
